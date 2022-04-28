@@ -19,15 +19,3 @@ enum Endpoints {
     case playerStatistics
 //    case fixtureStatistics
 }
-
-
-// TEAM STATICS REQUIRED PARAMETERS
-
-//name: "team", value: "40"
-//name: "season", value: "2019"
-//name: "league", value: "39"
-
-
-// LEAGUES PARAMATERS (NOT REQUIRED)
-//name: "name", value: "Premier League"
-//name: "country", value: "England"
