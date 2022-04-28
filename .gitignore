@@ -11,6 +11,8 @@ xcuserdata/
 *.xcscmblueprint
 *.xccheckout
 
+Headers.swift
+
 Livscore/Helpers/
 *Headers.swift
 
