@@ -51,9 +51,7 @@ class ChooseCountryViewController: UIViewController {
             switch result {
             case .success(let countriesBody):
                 
-                for country in countriesBody.response {
-                    self.countries.append(country)
-                }
+                self.countries = countriesBody.response
                 
                 DispatchQueue.main.async {
                     self.countriesTableView.reloadData()
@@ -78,7 +76,7 @@ extension ChooseCountryViewController: UITableViewDataSource {
             fatalError("Error casting CountryTableViewCell in cellForRowAt")
         }
         let country = countries[indexPath.row]
-        cell.configure(with: CountriesTableViewViewModel(countryName: country.name, countryFlag: country.flag ?? ""))
+        cell.configure(with: CountriesTableViewViewModel(countryName: country.name, countryFlag: country.flag ?? "https://thumbs.dreamstime.com/z/no-image-available-icon-photo-camera-flat-vector-illustration-132483141.jpg"))
         return cell
     }
     

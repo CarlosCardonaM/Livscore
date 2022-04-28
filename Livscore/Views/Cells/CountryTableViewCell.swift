@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import SVGKit
+import Kingfisher
 
 class CountryTableViewCell: UITableViewCell {
     
@@ -51,7 +53,13 @@ class CountryTableViewCell: UITableViewCell {
     }
     
     public func configure(with viewModel: CountriesTableViewViewModel) {
+        
+//        guard let url = URL(string: viewModel.countrFlag) else { return }
+//        let data = try? Data(contentsOf: url)
+//        let receivedImage: SVGKImage = SVGKImage(data: data)
+        
         countryLabel.text = viewModel.countryName
+//        flagImageView.image = receivedImage.uiImage
     }
 
 }
