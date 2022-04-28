@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		484906AD280F35300053DC6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484906AC280F35300053DC6B /* AppDelegate.swift */; };
 		484906AF280F35300053DC6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484906AE280F35300053DC6B /* SceneDelegate.swift */; };
-		484906B1280F35300053DC6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484906B0280F35300053DC6B /* ViewController.swift */; };
 		484906B4280F35300053DC6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484906B2280F35300053DC6B /* Main.storyboard */; };
 		484906B6280F35350053DC6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484906B5280F35350053DC6B /* Assets.xcassets */; };
 		484906B9280F35350053DC6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484906B7280F35350053DC6B /* LaunchScreen.storyboard */; };
@@ -29,13 +28,13 @@
 		48DCFEE0281A082F0035406A /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEDF281A082F0035406A /* Headers.swift */; };
 		48DCFEE3281A17D80035406A /* APIDocumentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEE2281A17D80035406A /* APIDocumentation.swift */; };
 		48DCFEE5281A17E70035406A /* APICallExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEE4281A17E70035406A /* APICallExamples.swift */; };
+		48DCFEEB281A5B030035406A /* ChooseTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEEA281A5B030035406A /* ChooseTeamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		484906A9280F35300053DC6B /* Livscore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Livscore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		484906AC280F35300053DC6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		484906AE280F35300053DC6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		484906B0280F35300053DC6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		484906B3280F35300053DC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		484906B5280F35350053DC6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484906B8280F35350053DC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		48DCFEDF281A082F0035406A /* Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
 		48DCFEE2281A17D80035406A /* APIDocumentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDocumentation.swift; sourceTree = "<group>"; };
 		48DCFEE4281A17E70035406A /* APICallExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallExamples.swift; sourceTree = "<group>"; };
+		48DCFEEA281A5B030035406A /* ChooseTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTeamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +148,7 @@
 		48DCFECE281288860035406A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				484906B0280F35300053DC6B /* ViewController.swift */,
+				48DCFEE9281A5AAD0035406A /* Onboarding */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -177,6 +177,14 @@
 				48DCFEE4281A17E70035406A /* APICallExamples.swift */,
 			);
 			path = "Support Code";
+			sourceTree = "<group>";
+		};
+		48DCFEE9281A5AAD0035406A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				48DCFEEA281A5B030035406A /* ChooseTeamViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,9 +264,9 @@
 			files = (
 				48DCFED828177EB60035406A /* FixturesStatistics.swift in Sources */,
 				48DCFED22812891B0035406A /* Countries.swift in Sources */,
-				484906B1280F35300053DC6B /* ViewController.swift in Sources */,
 				48DCFEC128111DF40035406A /* Extensions.swift in Sources */,
 				48DCFEC42811F0EE0035406A /* Team.swift in Sources */,
+				48DCFEEB281A5B030035406A /* ChooseTeamViewController.swift in Sources */,
 				48DCFEDA2817BFD90035406A /* Trophies.swift in Sources */,
 				48DCFEE5281A17E70035406A /* APICallExamples.swift in Sources */,
 				484906AD280F35300053DC6B /* AppDelegate.swift in Sources */,
