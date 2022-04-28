@@ -21,7 +21,6 @@ import Foundation
 //                    print("League: \(x.league.name)")
 //                    print("Goals: \(x.goals.total ?? 10000)")
 //                    print("Games: \(x.games.appearences)")
-//                    print("Season: \(x.league.season)")
 //                }
 //            case .failure(let error):
 //                print(error)
