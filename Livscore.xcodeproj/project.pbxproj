@@ -28,7 +28,7 @@
 		48DCFEDC2817C17E0035406A /* PlayerStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEDB2817C17E0035406A /* PlayerStatistics.swift */; };
 		48DCFEE0281A082F0035406A /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEDF281A082F0035406A /* Headers.swift */; };
 		48DCFEE3281A17D80035406A /* APIDocumentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEE2281A17D80035406A /* APIDocumentation.swift */; };
-		48DCFEE5281A17E70035406A /* APICall examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEE4281A17E70035406A /* APICall examples.swift */; };
+		48DCFEE5281A17E70035406A /* APICallExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEE4281A17E70035406A /* APICallExamples.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +55,7 @@
 		48DCFEDB2817C17E0035406A /* PlayerStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatistics.swift; sourceTree = "<group>"; };
 		48DCFEDF281A082F0035406A /* Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
 		48DCFEE2281A17D80035406A /* APIDocumentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDocumentation.swift; sourceTree = "<group>"; };
-		48DCFEE4281A17E70035406A /* APICall examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APICall examples.swift"; sourceTree = "<group>"; };
+		48DCFEE4281A17E70035406A /* APICallExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallExamples.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				48DCFEE2281A17D80035406A /* APIDocumentation.swift */,
-				48DCFEE4281A17E70035406A /* APICall examples.swift */,
+				48DCFEE4281A17E70035406A /* APICallExamples.swift */,
 			);
 			path = "Support Code";
 			sourceTree = "<group>";
@@ -260,7 +260,7 @@
 				48DCFEC128111DF40035406A /* Extensions.swift in Sources */,
 				48DCFEC42811F0EE0035406A /* Team.swift in Sources */,
 				48DCFEDA2817BFD90035406A /* Trophies.swift in Sources */,
-				48DCFEE5281A17E70035406A /* APICall examples.swift in Sources */,
+				48DCFEE5281A17E70035406A /* APICallExamples.swift in Sources */,
 				484906AD280F35300053DC6B /* AppDelegate.swift in Sources */,
 				48DCFEE3281A17D80035406A /* APIDocumentation.swift in Sources */,
 				484906AF280F35300053DC6B /* SceneDelegate.swift in Sources */,
