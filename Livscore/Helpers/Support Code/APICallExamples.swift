@@ -16,7 +16,7 @@ import Foundation
 //
 //                print(response.response[0].player.firstname)
 //                print(response.response[0].player.lastname)
-
+//
 //                for x in response.response[0].statistics {
 //                    print("League: \(x.league.name)")
 //                    print("Goals: \(x.goals.total ?? 10000)")
