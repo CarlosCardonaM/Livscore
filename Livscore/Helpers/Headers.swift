@@ -10,6 +10,6 @@ import Foundation
 class Headers {
     static let HEADERS = [
         "X-RapidAPI-Host": "api-football-v1.p.rapidapi.com",
-        "X-RapidAPI-Key": "chaca nada"
+        "X-RapidAPI-Key": ""
     ]
 }
