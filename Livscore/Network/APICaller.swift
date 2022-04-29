@@ -52,6 +52,10 @@ class APICaller {
             var urlComp = URLComponents(string: Constants.PLAYER_STATISTICS_URL)
             urlComp?.queryItems = parameters
             url = urlComp?.url!
+        case .teamInformation:
+            var urlComp = URLComponents(string: Constants.TEAM_INFORMATION_URL)
+            urlComp?.queryItems = parameters
+            url = urlComp?.url!
         }
         
         guard url != nil else { return }

@@ -12,6 +12,11 @@
 		484906B4280F35300053DC6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484906B2280F35300053DC6B /* Main.storyboard */; };
 		484906B6280F35350053DC6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484906B5280F35350053DC6B /* Assets.xcassets */; };
 		484906B9280F35350053DC6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484906B7280F35350053DC6B /* LaunchScreen.storyboard */; };
+		484D666B281B8F020004F71A /* TeamInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D666A281B8F020004F71A /* TeamInformation.swift */; };
+		484D666D281B91670004F71A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D666C281B91670004F71A /* WelcomeViewController.swift */; };
+		484D6671281BA0470004F71A /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484D6670281BA0470004F71A /* SourceSansPro-Regular.ttf */; };
+		484D6673281BA5BF0004F71A /* SourceSansPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484D6672281BA5BF0004F71A /* SourceSansPro-Light.ttf */; };
+		484D6675281BA5C80004F71A /* SourceSansPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484D6674281BA5C80004F71A /* SourceSansPro-Black.ttf */; };
 		48DCFEBA28109A1F0035406A /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEB928109A1F0035406A /* APICaller.swift */; };
 		48DCFEBC28109D860035406A /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEBB28109D860035406A /* League.swift */; };
 		48DCFEC128111DF40035406A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEC028111DF40035406A /* Extensions.swift */; };
@@ -46,6 +51,11 @@
 		484906B5280F35350053DC6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484906B8280F35350053DC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		484906BA280F35350053DC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484D666A281B8F020004F71A /* TeamInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInformation.swift; sourceTree = "<group>"; };
+		484D666C281B91670004F71A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		484D6670281BA0470004F71A /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		484D6672281BA5BF0004F71A /* SourceSansPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Light.ttf"; sourceTree = "<group>"; };
+		484D6674281BA5C80004F71A /* SourceSansPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Black.ttf"; sourceTree = "<group>"; };
 		48DCFEB928109A1F0035406A /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		48DCFEBB28109D860035406A /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		48DCFEC028111DF40035406A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -103,6 +113,7 @@
 		484906AB280F35300053DC6B /* Livscore */ = {
 			isa = PBXGroup;
 			children = (
+				484D666E281BA0030004F71A /* Resources */,
 				48DCFEF5281A729C0035406A /* ViewModels */,
 				48DCFED0281288C10035406A /* Views */,
 				48DCFECF281288A20035406A /* Storyboards */,
@@ -114,6 +125,25 @@
 				484906BA280F35350053DC6B /* Info.plist */,
 			);
 			path = Livscore;
+			sourceTree = "<group>";
+		};
+		484D666E281BA0030004F71A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				484D666F281BA0110004F71A /* Fonts */,
+				484906B5280F35350053DC6B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		484D666F281BA0110004F71A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				484D6674281BA5C80004F71A /* SourceSansPro-Black.ttf */,
+				484D6672281BA5BF0004F71A /* SourceSansPro-Light.ttf */,
+				484D6670281BA0470004F71A /* SourceSansPro-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		48DCFEC22811E13F0035406A /* Model */ = {
@@ -128,6 +158,7 @@
 				48DCFED728177EB60035406A /* FixturesStatistics.swift */,
 				48DCFED92817BFD90035406A /* Trophies.swift */,
 				48DCFEDB2817C17E0035406A /* PlayerStatistics.swift */,
+				484D666A281B8F020004F71A /* TeamInformation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,7 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				48DCFEEF281A60E70035406A /* Cells */,
-				48DCFEF2281A610E0035406A /* Assets */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,6 +232,7 @@
 			children = (
 				48DCFEEA281A5B030035406A /* ChooseTeamViewController.swift */,
 				48DCFEED281A5CF40035406A /* ChooseCountryViewController.swift */,
+				484D666C281B91670004F71A /* WelcomeViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -212,14 +243,6 @@
 				48DCFEF0281A61020035406A /* CountryTableViewCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		48DCFEF2281A610E0035406A /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				484906B5280F35350053DC6B /* Assets.xcassets */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		48DCFEF5281A729C0035406A /* ViewModels */ = {
@@ -236,7 +259,6 @@
 				77C93FC03FCB45C890A23E06 /* Pods-Livscore.debug.xcconfig */,
 				373C36C3B8EBDF34D0F271F7 /* Pods-Livscore.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -311,6 +333,9 @@
 				484906B9280F35350053DC6B /* LaunchScreen.storyboard in Resources */,
 				484906B6280F35350053DC6B /* Assets.xcassets in Resources */,
 				484906B4280F35300053DC6B /* Main.storyboard in Resources */,
+				484D6673281BA5BF0004F71A /* SourceSansPro-Light.ttf in Resources */,
+				484D6675281BA5C80004F71A /* SourceSansPro-Black.ttf in Resources */,
+				484D6671281BA0470004F71A /* SourceSansPro-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +394,7 @@
 				48DCFEC42811F0EE0035406A /* Team.swift in Sources */,
 				48DCFEF1281A61020035406A /* CountryTableViewCell.swift in Sources */,
 				48DCFEEB281A5B030035406A /* ChooseTeamViewController.swift in Sources */,
+				484D666D281B91670004F71A /* WelcomeViewController.swift in Sources */,
 				48DCFEDA2817BFD90035406A /* Trophies.swift in Sources */,
 				48DCFEE5281A17E70035406A /* APICallExamples.swift in Sources */,
 				484906AD280F35300053DC6B /* AppDelegate.swift in Sources */,
@@ -384,6 +410,7 @@
 				48DCFED6281761FB0035406A /* Fixtures.swift in Sources */,
 				48DCFEF9281A79030035406A /* APIErrors.swift in Sources */,
 				48DCFECA2812850F0035406A /* Seasons.swift in Sources */,
+				484D666B281B8F020004F71A /* TeamInformation.swift in Sources */,
 				48DCFEC6281271D30035406A /* Constants.swift in Sources */,
 				48DCFEF4281A66FB0035406A /* Headers.swift in Sources */,
 			);

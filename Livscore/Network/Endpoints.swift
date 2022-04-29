@@ -17,5 +17,6 @@ enum Endpoints {
     case h2hFixtures
     case trophies
     case playerStatistics
+    case teamInformation
 //    case fixtureStatistics
 }
