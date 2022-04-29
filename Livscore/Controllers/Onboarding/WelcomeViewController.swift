@@ -17,6 +17,14 @@ class WelcomeViewController: UIViewController {
         return scrollView
     }()
     
+    var appLogoImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "applogo2")
+        imageView.contentMode = .scaleAspectFit
+        imageView.clipsToBounds = true
+        return imageView
+    }()
+    
     var middleView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
@@ -86,6 +94,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         logoImageView.frame = CGRect(x: view.width - 140, y: -70, width: 280, height: 280)
+        appLogoImageView.frame = CGRect(x: 30, y: 60, width: 200, height: 100)
         middleView.frame = CGRect(x: 0, y: view.height / 6, width: view.width, height: view.height + 100)
         scrollView.frame = view.bounds
         
@@ -104,6 +113,7 @@ class WelcomeViewController: UIViewController {
     
     func addSubviews() {
         view.addSubview(logoImageView)
+        view.addSubview(appLogoImageView)
         view.addSubview(scrollView)
         scrollView.addSubview(middleView)
         middleView.addSubview(statsTitleLabel)
