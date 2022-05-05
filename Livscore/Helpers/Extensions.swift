@@ -90,10 +90,31 @@ extension UIColor {
 }
 
 extension UIFont {
+    
     static func scriptFont(size: CGFloat, style: String = "Regular") -> UIFont {
       guard let customFont = UIFont(name: "SourceSansPro-\(style)", size: size) else {
         return UIFont.systemFont(ofSize: size)
       }
       return customFont
     }
+}
+
+enum fonts {
+    case regular
+    case light
+    case black
+}
+
+extension fonts: CustomStringConvertible {
+    var description: String {
+        switch self {
+        case .regular:
+            return "Regular"
+        case .light:
+            return "Light"
+        case .black:
+            return "Black"
+        }
+    }
+    
 }

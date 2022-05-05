@@ -17,6 +17,9 @@
 		484D6671281BA0470004F71A /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484D6670281BA0470004F71A /* SourceSansPro-Regular.ttf */; };
 		484D6673281BA5BF0004F71A /* SourceSansPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484D6672281BA5BF0004F71A /* SourceSansPro-Light.ttf */; };
 		484D6675281BA5C80004F71A /* SourceSansPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484D6674281BA5C80004F71A /* SourceSansPro-Black.ttf */; };
+		484D667928221E7C0004F71A /* StatsTableviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D667828221E7C0004F71A /* StatsTableviewViewModel.swift */; };
+		484D667B2822223E0004F71A /* StatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D667A2822223E0004F71A /* StatsTableViewCell.swift */; };
+		484D667E282223F70004F71A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D667D282223F70004F71A /* CardView.swift */; };
 		48DCFEBA28109A1F0035406A /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEB928109A1F0035406A /* APICaller.swift */; };
 		48DCFEBC28109D860035406A /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEBB28109D860035406A /* League.swift */; };
 		48DCFEC128111DF40035406A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEC028111DF40035406A /* Extensions.swift */; };
@@ -56,6 +59,9 @@
 		484D6670281BA0470004F71A /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
 		484D6672281BA5BF0004F71A /* SourceSansPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Light.ttf"; sourceTree = "<group>"; };
 		484D6674281BA5C80004F71A /* SourceSansPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Black.ttf"; sourceTree = "<group>"; };
+		484D667828221E7C0004F71A /* StatsTableviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableviewViewModel.swift; sourceTree = "<group>"; };
+		484D667A2822223E0004F71A /* StatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewCell.swift; sourceTree = "<group>"; };
+		484D667D282223F70004F71A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		48DCFEB928109A1F0035406A /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		48DCFEBB28109D860035406A /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		48DCFEC028111DF40035406A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -113,11 +119,11 @@
 		484906AB280F35300053DC6B /* Livscore */ = {
 			isa = PBXGroup;
 			children = (
+				48DCFECD281288790035406A /* Delegates */,
 				484D666E281BA0030004F71A /* Resources */,
 				48DCFEF5281A729C0035406A /* ViewModels */,
 				48DCFED0281288C10035406A /* Views */,
 				48DCFECF281288A20035406A /* Storyboards */,
-				48DCFECD281288790035406A /* Delegates */,
 				48DCFECC281288620035406A /* Helpers */,
 				48DCFECE281288860035406A /* Controllers */,
 				48DCFECB281288430035406A /* Network */,
@@ -144,6 +150,14 @@
 				484D6670281BA0470004F71A /* SourceSansPro-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		484D667C282223DF0004F71A /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				484D667D282223F70004F71A /* CardView.swift */,
+			);
+			path = ReusableViews;
 			sourceTree = "<group>";
 		};
 		48DCFEC22811E13F0035406A /* Model */ = {
@@ -213,6 +227,7 @@
 		48DCFED0281288C10035406A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				484D667C282223DF0004F71A /* ReusableViews */,
 				48DCFEEF281A60E70035406A /* Cells */,
 			);
 			path = Views;
@@ -241,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				48DCFEF0281A61020035406A /* CountryTableViewCell.swift */,
+				484D667A2822223E0004F71A /* StatsTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -249,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				48DCFEF6281A72B90035406A /* CountriesTableViewViewModel.swift */,
+				484D667828221E7C0004F71A /* StatsTableviewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -400,9 +417,12 @@
 				484906AD280F35300053DC6B /* AppDelegate.swift in Sources */,
 				48DCFEEE281A5CF40035406A /* ChooseCountryViewController.swift in Sources */,
 				48DCFEE3281A17D80035406A /* APIDocumentation.swift in Sources */,
+				484D667928221E7C0004F71A /* StatsTableviewViewModel.swift in Sources */,
 				484906AF280F35300053DC6B /* SceneDelegate.swift in Sources */,
+				484D667E282223F70004F71A /* CardView.swift in Sources */,
 				48DCFEBC28109D860035406A /* League.swift in Sources */,
 				48DCFEDC2817C17E0035406A /* PlayerStatistics.swift in Sources */,
+				484D667B2822223E0004F71A /* StatsTableViewCell.swift in Sources */,
 				48DCFEBA28109A1F0035406A /* APICaller.swift in Sources */,
 				48DCFEF7281A72B90035406A /* CountriesTableViewViewModel.swift in Sources */,
 				48DCFED4281291E40035406A /* Timezones.swift in Sources */,
