@@ -52,6 +52,10 @@ class APICaller {
             var urlComp = URLComponents(string: Constants.PLAYER_STATISTICS_URL)
             urlComp?.queryItems = parameters
             url = urlComp?.url!
+        case .teamInformation:
+            var urlComp = URLComponents(string: Constants.TEAM_INFORMATION_URL)
+            urlComp?.queryItems = parameters
+            url = urlComp?.url!
         }
         
         guard url != nil else { return }
@@ -59,6 +63,12 @@ class APICaller {
         
         var request = URLRequest(url: url!, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10)
         request.httpMethod = "GET"
+        
+        // TODO: - Make it functional the APIError enum
+        if Headers.HEADERS["X-RapidAPI-Key"] == "" {
+            completion(.failure(APIErrors.emptyAPIKey))
+        }
+        
         request.allHTTPHeaderFields = Headers.HEADERS
         
         URLSession.shared.dataTask(with: request) { data, response, error in
@@ -85,67 +95,3 @@ class APICaller {
     }
     
 }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-// BACKUP FUNC
-//
-//    public func getLeagues(completion: @escaping (Result<LeagueBody, Error>) -> Void) {
-//
-//        guard var url = URL(string: "https://api-football-v1.p.rapidapi.com/v3/leagues") else {
-//            print("Not valid url")
-//            return
-//        }
-//        url.addProperty(name: "name", value: "Premier League")
-//        url.addProperty(name: "country", value: "England")
-//
-//        var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10)
-//        request.httpMethod = "GET"
-//        request.allHTTPHeaderFields = headers
-//
-//
-//        URLSession.shared.dataTask(with: request) { data, response, error in
-//
-//            if let error = error {
-//                print(error)
-//                completion(.failure(error))
-//
-//            } else if let httpResponse = response {
-//                print("-- Response: \(httpResponse)\n")
-//            }
-//
-//            if let data = data {
-//                do {
-//                    let result = try JSONDecoder().decode(LeagueBody.self, from: data)
-//                    completion(.success(result))
-//
-//                } catch {
-//                    print(error)
-//                }
-//            }
-//
-//
-//        }
-//        .resume()
-//    }
-//}

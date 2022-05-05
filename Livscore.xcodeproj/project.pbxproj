@@ -12,6 +12,14 @@
 		484906B4280F35300053DC6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484906B2280F35300053DC6B /* Main.storyboard */; };
 		484906B6280F35350053DC6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484906B5280F35350053DC6B /* Assets.xcassets */; };
 		484906B9280F35350053DC6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484906B7280F35350053DC6B /* LaunchScreen.storyboard */; };
+		484D666B281B8F020004F71A /* TeamInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D666A281B8F020004F71A /* TeamInformation.swift */; };
+		484D666D281B91670004F71A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D666C281B91670004F71A /* WelcomeViewController.swift */; };
+		484D6671281BA0470004F71A /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484D6670281BA0470004F71A /* SourceSansPro-Regular.ttf */; };
+		484D6673281BA5BF0004F71A /* SourceSansPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484D6672281BA5BF0004F71A /* SourceSansPro-Light.ttf */; };
+		484D6675281BA5C80004F71A /* SourceSansPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484D6674281BA5C80004F71A /* SourceSansPro-Black.ttf */; };
+		484D667928221E7C0004F71A /* StatsTableviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D667828221E7C0004F71A /* StatsTableviewViewModel.swift */; };
+		484D667B2822223E0004F71A /* StatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D667A2822223E0004F71A /* StatsTableViewCell.swift */; };
+		484D667E282223F70004F71A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D667D282223F70004F71A /* CardView.swift */; };
 		48DCFEBA28109A1F0035406A /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEB928109A1F0035406A /* APICaller.swift */; };
 		48DCFEBC28109D860035406A /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEBB28109D860035406A /* League.swift */; };
 		48DCFEC128111DF40035406A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEC028111DF40035406A /* Extensions.swift */; };
@@ -25,13 +33,20 @@
 		48DCFED828177EB60035406A /* FixturesStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFED728177EB60035406A /* FixturesStatistics.swift */; };
 		48DCFEDA2817BFD90035406A /* Trophies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFED92817BFD90035406A /* Trophies.swift */; };
 		48DCFEDC2817C17E0035406A /* PlayerStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEDB2817C17E0035406A /* PlayerStatistics.swift */; };
-		48DCFEE0281A082F0035406A /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEDF281A082F0035406A /* Headers.swift */; };
 		48DCFEE3281A17D80035406A /* APIDocumentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEE2281A17D80035406A /* APIDocumentation.swift */; };
 		48DCFEE5281A17E70035406A /* APICallExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEE4281A17E70035406A /* APICallExamples.swift */; };
 		48DCFEEB281A5B030035406A /* ChooseTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEEA281A5B030035406A /* ChooseTeamViewController.swift */; };
+		48DCFEEE281A5CF40035406A /* ChooseCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEED281A5CF40035406A /* ChooseCountryViewController.swift */; };
+		48DCFEF1281A61020035406A /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEF0281A61020035406A /* CountryTableViewCell.swift */; };
+		48DCFEF4281A66FB0035406A /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEF3281A66FB0035406A /* Headers.swift */; };
+		48DCFEF7281A72B90035406A /* CountriesTableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEF6281A72B90035406A /* CountriesTableViewViewModel.swift */; };
+		48DCFEF9281A79030035406A /* APIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFEF8281A79030035406A /* APIErrors.swift */; };
+		B17DC02815A7144896C7BBBE /* Pods_Livscore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32ED778499426C201FC5B74D /* Pods_Livscore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32ED778499426C201FC5B74D /* Pods_Livscore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Livscore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		373C36C3B8EBDF34D0F271F7 /* Pods-Livscore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Livscore.release.xcconfig"; path = "Target Support Files/Pods-Livscore/Pods-Livscore.release.xcconfig"; sourceTree = "<group>"; };
 		484906A9280F35300053DC6B /* Livscore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Livscore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		484906AC280F35300053DC6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		484906AE280F35300053DC6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +54,14 @@
 		484906B5280F35350053DC6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484906B8280F35350053DC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		484906BA280F35350053DC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484D666A281B8F020004F71A /* TeamInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInformation.swift; sourceTree = "<group>"; };
+		484D666C281B91670004F71A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		484D6670281BA0470004F71A /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		484D6672281BA5BF0004F71A /* SourceSansPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Light.ttf"; sourceTree = "<group>"; };
+		484D6674281BA5C80004F71A /* SourceSansPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Black.ttf"; sourceTree = "<group>"; };
+		484D667828221E7C0004F71A /* StatsTableviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableviewViewModel.swift; sourceTree = "<group>"; };
+		484D667A2822223E0004F71A /* StatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewCell.swift; sourceTree = "<group>"; };
+		484D667D282223F70004F71A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		48DCFEB928109A1F0035406A /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		48DCFEBB28109D860035406A /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		48DCFEC028111DF40035406A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -52,10 +75,15 @@
 		48DCFED728177EB60035406A /* FixturesStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesStatistics.swift; sourceTree = "<group>"; };
 		48DCFED92817BFD90035406A /* Trophies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trophies.swift; sourceTree = "<group>"; };
 		48DCFEDB2817C17E0035406A /* PlayerStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatistics.swift; sourceTree = "<group>"; };
-		48DCFEDF281A082F0035406A /* Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
 		48DCFEE2281A17D80035406A /* APIDocumentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDocumentation.swift; sourceTree = "<group>"; };
 		48DCFEE4281A17E70035406A /* APICallExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallExamples.swift; sourceTree = "<group>"; };
 		48DCFEEA281A5B030035406A /* ChooseTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTeamViewController.swift; sourceTree = "<group>"; };
+		48DCFEED281A5CF40035406A /* ChooseCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCountryViewController.swift; sourceTree = "<group>"; };
+		48DCFEF0281A61020035406A /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		48DCFEF3281A66FB0035406A /* Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
+		48DCFEF6281A72B90035406A /* CountriesTableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewViewModel.swift; sourceTree = "<group>"; };
+		48DCFEF8281A79030035406A /* APIErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrors.swift; sourceTree = "<group>"; };
+		77C93FC03FCB45C890A23E06 /* Pods-Livscore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Livscore.debug.xcconfig"; path = "Target Support Files/Pods-Livscore/Pods-Livscore.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B17DC02815A7144896C7BBBE /* Pods_Livscore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +103,8 @@
 			children = (
 				484906AB280F35300053DC6B /* Livscore */,
 				484906AA280F35300053DC6B /* Products */,
+				8FD90CED155F9333E8570269 /* Pods */,
+				C10F63051AEC5C54437CF4C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,9 +119,11 @@
 		484906AB280F35300053DC6B /* Livscore */ = {
 			isa = PBXGroup;
 			children = (
+				48DCFECD281288790035406A /* Delegates */,
+				484D666E281BA0030004F71A /* Resources */,
+				48DCFEF5281A729C0035406A /* ViewModels */,
 				48DCFED0281288C10035406A /* Views */,
 				48DCFECF281288A20035406A /* Storyboards */,
-				48DCFECD281288790035406A /* Delegates */,
 				48DCFECC281288620035406A /* Helpers */,
 				48DCFECE281288860035406A /* Controllers */,
 				48DCFECB281288430035406A /* Network */,
@@ -98,6 +131,33 @@
 				484906BA280F35350053DC6B /* Info.plist */,
 			);
 			path = Livscore;
+			sourceTree = "<group>";
+		};
+		484D666E281BA0030004F71A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				484D666F281BA0110004F71A /* Fonts */,
+				484906B5280F35350053DC6B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		484D666F281BA0110004F71A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				484D6674281BA5C80004F71A /* SourceSansPro-Black.ttf */,
+				484D6672281BA5BF0004F71A /* SourceSansPro-Light.ttf */,
+				484D6670281BA0470004F71A /* SourceSansPro-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		484D667C282223DF0004F71A /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				484D667D282223F70004F71A /* CardView.swift */,
+			);
+			path = ReusableViews;
 			sourceTree = "<group>";
 		};
 		48DCFEC22811E13F0035406A /* Model */ = {
@@ -112,6 +172,7 @@
 				48DCFED728177EB60035406A /* FixturesStatistics.swift */,
 				48DCFED92817BFD90035406A /* Trophies.swift */,
 				48DCFEDB2817C17E0035406A /* PlayerStatistics.swift */,
+				484D666A281B8F020004F71A /* TeamInformation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,7 +192,8 @@
 				48DCFEE1281A17C70035406A /* Support Code */,
 				48DCFEC028111DF40035406A /* Extensions.swift */,
 				48DCFEC5281271D30035406A /* Constants.swift */,
-				48DCFEDF281A082F0035406A /* Headers.swift */,
+				48DCFEF3281A66FB0035406A /* Headers.swift */,
+				48DCFEF8281A79030035406A /* APIErrors.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -165,7 +227,8 @@
 		48DCFED0281288C10035406A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				484906B5280F35350053DC6B /* Assets.xcassets */,
+				484D667C282223DF0004F71A /* ReusableViews */,
+				48DCFEEF281A60E70035406A /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,8 +246,45 @@
 			isa = PBXGroup;
 			children = (
 				48DCFEEA281A5B030035406A /* ChooseTeamViewController.swift */,
+				48DCFEED281A5CF40035406A /* ChooseCountryViewController.swift */,
+				484D666C281B91670004F71A /* WelcomeViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		48DCFEEF281A60E70035406A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				48DCFEF0281A61020035406A /* CountryTableViewCell.swift */,
+				484D667A2822223E0004F71A /* StatsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		48DCFEF5281A729C0035406A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				48DCFEF6281A72B90035406A /* CountriesTableViewViewModel.swift */,
+				484D667828221E7C0004F71A /* StatsTableviewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8FD90CED155F9333E8570269 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77C93FC03FCB45C890A23E06 /* Pods-Livscore.debug.xcconfig */,
+				373C36C3B8EBDF34D0F271F7 /* Pods-Livscore.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C10F63051AEC5C54437CF4C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32ED778499426C201FC5B74D /* Pods_Livscore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,17 +294,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 484906BD280F35350053DC6B /* Build configuration list for PBXNativeTarget "Livscore" */;
 			buildPhases = (
+				4BBC438192B894C76831B312 /* [CP] Check Pods Manifest.lock */,
 				484906A5280F352F0053DC6B /* Sources */,
 				484906A6280F352F0053DC6B /* Frameworks */,
 				484906A7280F352F0053DC6B /* Resources */,
+				7882B3726FA10C3914858897 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Livscore;
-			packageProductDependencies = (
-			);
 			productName = Livscore;
 			productReference = 484906A9280F35300053DC6B /* Livscore.app */;
 			productType = "com.apple.product-type.application";
@@ -233,8 +333,6 @@
 				Base,
 			);
 			mainGroup = 484906A0280F352F0053DC6B;
-			packageReferences = (
-			);
 			productRefGroup = 484906AA280F35300053DC6B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -252,10 +350,55 @@
 				484906B9280F35350053DC6B /* LaunchScreen.storyboard in Resources */,
 				484906B6280F35350053DC6B /* Assets.xcassets in Resources */,
 				484906B4280F35300053DC6B /* Main.storyboard in Resources */,
+				484D6673281BA5BF0004F71A /* SourceSansPro-Light.ttf in Resources */,
+				484D6675281BA5C80004F71A /* SourceSansPro-Black.ttf in Resources */,
+				484D6671281BA0470004F71A /* SourceSansPro-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BBC438192B894C76831B312 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Livscore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7882B3726FA10C3914858897 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Livscore/Pods-Livscore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Livscore/Pods-Livscore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Livscore/Pods-Livscore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		484906A5280F352F0053DC6B /* Sources */ = {
@@ -266,21 +409,30 @@
 				48DCFED22812891B0035406A /* Countries.swift in Sources */,
 				48DCFEC128111DF40035406A /* Extensions.swift in Sources */,
 				48DCFEC42811F0EE0035406A /* Team.swift in Sources */,
+				48DCFEF1281A61020035406A /* CountryTableViewCell.swift in Sources */,
 				48DCFEEB281A5B030035406A /* ChooseTeamViewController.swift in Sources */,
+				484D666D281B91670004F71A /* WelcomeViewController.swift in Sources */,
 				48DCFEDA2817BFD90035406A /* Trophies.swift in Sources */,
 				48DCFEE5281A17E70035406A /* APICallExamples.swift in Sources */,
 				484906AD280F35300053DC6B /* AppDelegate.swift in Sources */,
+				48DCFEEE281A5CF40035406A /* ChooseCountryViewController.swift in Sources */,
 				48DCFEE3281A17D80035406A /* APIDocumentation.swift in Sources */,
+				484D667928221E7C0004F71A /* StatsTableviewViewModel.swift in Sources */,
 				484906AF280F35300053DC6B /* SceneDelegate.swift in Sources */,
+				484D667E282223F70004F71A /* CardView.swift in Sources */,
 				48DCFEBC28109D860035406A /* League.swift in Sources */,
 				48DCFEDC2817C17E0035406A /* PlayerStatistics.swift in Sources */,
+				484D667B2822223E0004F71A /* StatsTableViewCell.swift in Sources */,
 				48DCFEBA28109A1F0035406A /* APICaller.swift in Sources */,
+				48DCFEF7281A72B90035406A /* CountriesTableViewViewModel.swift in Sources */,
 				48DCFED4281291E40035406A /* Timezones.swift in Sources */,
-				48DCFEE0281A082F0035406A /* Headers.swift in Sources */,
 				48DCFEC8281281650035406A /* Endpoints.swift in Sources */,
 				48DCFED6281761FB0035406A /* Fixtures.swift in Sources */,
+				48DCFEF9281A79030035406A /* APIErrors.swift in Sources */,
 				48DCFECA2812850F0035406A /* Seasons.swift in Sources */,
+				484D666B281B8F020004F71A /* TeamInformation.swift in Sources */,
 				48DCFEC6281271D30035406A /* Constants.swift in Sources */,
+				48DCFEF4281A66FB0035406A /* Headers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +576,7 @@
 		};
 		484906BE280F35350053DC6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77C93FC03FCB45C890A23E06 /* Pods-Livscore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +605,7 @@
 		};
 		484906BF280F35350053DC6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 373C36C3B8EBDF34D0F271F7 /* Pods-Livscore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
